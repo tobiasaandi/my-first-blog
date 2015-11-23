@@ -1,31 +1,51 @@
 {% load staticfiles %}
 <html>
     <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <style>
+    p {
+        background-color: #fbac33;
+        width: 500px;
+        padding: 30px;
+        border: 5px solid #e91e63;
+        margin: 30px;
+        color: #000000;
+        font-family: monospace;
+        font-weight: bold;
+    }
+    button {
+      font-style: oblique;
+      background-color: #f50e44;
+      color: #63e91e;
+      font-weight: bold;
+      font-family: cursive ;
+
+
+    }
+    p.dotted {
+      border-style: dotted;
+    color:#fb0a5a;
+  }
+
+    </style>
+        <title>Yoyo</title>
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
 
     <body>
         <div class="page-header">
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <h1><a href="https://www.youtube.com/watch?v=bddoo38vsH8">Yoyo, a kaméleon</a></h1>
+            <h2><a href="http://www.chameleonfarm.hu/index.html/" target: "_blank">avagy zöld alapon barna, kék vagy mégis zöld?!!</a></h2>
+<p>A sisakos kaméleon Jemen és Szaúd-Arábia Vörös-tenger menti hegyeiben, félsivatagokban, cserjés-fás területeken, vagy akár öntözött kertekben él. A többi kaméleonhoz hasonlóan a fák ágai között mozog. Nappali állatok. Bár elsősorban rovarevők, étrendjüket időnként kiegészítik falevéllel, gyümölcsökkel és bimbókkal is. Zsákmányát lesből, rendkívül hosszú nyelvének gyors kiöltésével és a rovar megragadásával fogja el. Vízszükségletét a leveleken található cseppekből elégíti ki, az álló vízfelületet fel sem ismeri és ha a terráriumban csak ilyen áll rendelkezésére, akkor kiszáradhat.</p>
+
+<p2 id="demo"></p2>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = 'Gyík vagy! :D'">
+Nyomjad!!!</button>
+
+
+<p class="dotted">A kaméleonok furcsa lények, sose packázz velük!!</p>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                {% for post in posts %}
-                    <div class="post">
-                        <div class="date">
-                            {{ post.published_date }}
-                        </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
-                        <p>{{ post.text|linebreaks }}</p>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-        </div>
+
     </body>
 </html>
