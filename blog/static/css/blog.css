@@ -32,6 +32,30 @@
     color: #fb0a5a;
     }
 
+    p {
+        background-color: #fbac33;
+        width: 500px;
+        padding: 30px;
+        border: 5px solid #e91e63;
+        margin: 30px;
+        color: #000000;
+        font-family: monospace;
+        font-weight: bold;
+    }
+    button {
+      font-style: oblique;
+      background-color: #f50e44;
+      color: #63e91e;
+      font-weight: bold;
+      font-family: cursive ;
+
+
+    }
+    p.dotted {
+      border-style: dotted;
+    color:#fb0a5a;
+  }
+
 
     .h1 {
       font-family: 'Impact', Charcoal, sans-serif;
