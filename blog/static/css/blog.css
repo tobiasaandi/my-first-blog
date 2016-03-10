@@ -1,6 +1,15 @@
     body {
     background-color: #99e5ce;
 }
+
+  .cap {
+     width: 600px;
+     background-color: #99e5ce;
+     float: right;
+
+  }
+
+
     .page-header {
         background-color: #99e5ce;
         margin-top: 0;
@@ -10,7 +19,7 @@
     .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
         color: #2a0fa1;
         font-size: 36pt;
-        text-decoration: underline;
+        text-decoration: none;
     }
 
     .content {
