@@ -1,28 +1,78 @@
-{% load staticfiles %}
+<!DOCTYPE HTML>
 <html>
     <head>
-        <title>Yoyo</title>
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>Andi és Barni</title>
     </head>
+<div id="wrapper">
+	<header>
+		Andi és Barni nagy napja
+	</header>
+	<nav>
+		<a href="">A szállásról</a> •
+		<a href="">Kapcsolat</a> •
+		<a href="">harmadik</a> •
+		<a href="">negyedik</a>
+<style>
+nav {
+  padding: 25px;
+	margin: 60px;
+	color: #000;
+  font-family: "Lobster", cursive;
+  font-style: italic;
+	box-shadow: 0px 0px 5px #6d2a15;
+	background: #ffb400;
+	background: -moz-linear-gradient(top,  #ffb400 0%, #ff8500 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffb400), color-stop(100%,#ff8500));
+	background: -webkit-linear-gradient(top,  #ffb400 0%,#ff8500 100%);
+	background: -o-linear-gradient(top,  #ffb400 0%,#ff8500 100%);
+	background: -ms-linear-gradient(top,  #ffb400 0%,#ff8500 100%);
+  background: linear-gradient(to bottom,  #ffb400 0%,#ff8500 100%);
+ }
+ header {
+   margin: 20px;
+   text-align: center;
+   font-family: "Lobster", cursive;
+   font-size: 40px;
+   background-color: #FAEEE0
+   }
+  div {
+    background-color: #F7F3CF
 
-    <body>
-        <div class="page-header">
-            <h1><a href="https://www.youtube.com/watch?v=bddoo38vsH8">Yoyo, a kaméleon</a></h1>
-            <h2><a href="http://www.chameleonfarm.hu/index.html/" target: "_blank">avagy zöld alapon barna, kék vagy mégis zöld?!!</a></h2>
-<p>A sisakos kaméleon Jemen és Szaúd-Arábia Vörös-tenger menti hegyeiben, félsivatagokban, cserjés-fás területeken, vagy akár öntözött kertekben él. A többi kaméleonhoz hasonlóan a fák ágai között mozog. Nappali állatok. Bár elsősorban rovarevők, étrendjüket időnként kiegészítik falevéllel, gyümölcsökkel és bimbókkal is. Zsákmányát lesből, rendkívül hosszú nyelvének gyors kiöltésével és a rovar megragadásával fogja el. Vízszükségletét a leveleken található cseppekből elégíti ki, az álló vízfelületet fel sem ismeri és ha a terráriumban csak ilyen áll rendelkezésére, akkor kiszáradhat.</p>
+}
 
-<p2 id="demo"></p2>
-
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = 'Gyík vagy! :D'">
-Nyomjad!!!</button>
-<div class="cap">
-<img src="data:image/jpeg;base64,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" alt="Kami">
-  </div>
-
-
-<p class="dotted">A kaméleonok furcsa lények, sose packázz velük!!</p>
-        </div>
-
-    </body>
+ </style>
+	 </nav>
+	<section>
+		<article>
+			<h1>Lorem ipsum</h1>
+			<figure>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBdTG_AcY0l-VMHwgsFnelBRSqQIu04axSJvzxAQAzqrWr1-zm6i1PSg" alt="Csokor"/>
+				<figcaption>
+					kep leirasa par szoban...
+				</figcaption>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie augue et nisl scelerisque nec consectetur est pharetra. Fusce imperdiet luctus justo, in sodales ante accumsan et. Vestibulum arcu sapien, aliquam ac porta ac, pellentesque id nibh. Pellentesque ut enim sed eros condimentum condimentum. Vivamus erat nisi, consectetur vitae gravida at, porttitor non diam. Proin non mauris eu felis sagittis tincidunt. Mauris eget elit arcu. Ut lectus magna, venenatis ac placerat vel, sodales ut sapien.</p>
+		</article>
+		<article>
+			<h1>Lorem ipsum</h1>
+			<figure>
+				<img src="http://maikupon.hu/kepek/akciok/teli-pihenes-a-gerecse-labanal-budapesttol-mindossze-40-km-re-2-vagy-3-ejszaka-szallas-reggellis-ellatassal-es-wellness-hasznalattal-kedvezo-aron-19-990-ft-tol-a-pollushof-panzioban-most-fizetendo-3-000-ft.5.jpg" alt="Pollushof"/>
+				<figcaption>
+					kep leirasa par szoban...
+				</figcaption>
+			</figure>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean molestie augue et nisl scelerisque nec consectetur est pharetra. Fusce imperdiet luctus justo, in sodales ante accumsan et. Vestibulum arcu sapien, aliquam ac porta ac, pellentesque id nibh. Pellentesque ut enim sed eros condimentum condimentum. Vivamus erat nisi, consectetur vitae gravida at, porttitor non diam. Proin non mauris eu felis sagittis tincidunt. Mauris eget elit arcu. Ut lectus magna, venenatis ac placerat vel, sodales ut sapien.</p>
+		</article>
+	</section>
+	<aside>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas erat est, faucibus sit amet adipiscing ut, mattis in felis. Mauris metus mi, molestie non dignissim a, aliquam ut elit. In in lorem nisl, nec porta nunc. Vivamus vitae ullamcorper eros. Fusce sed sapien euismod lacus faucibus egestas ut a felis. Vivamus porta neque nec turpis porta sed semper enim hendrerit. Quisque ut est sem. Aenean in suscipit lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus elementum metus in diam tincidunt accumsan. Sed vitae est dapibus massa sollicitudin iaculis id non dui. Proin ut tellus quis sem tincidunt consectetur. Aenean in ullamcorper lorem.
+	</aside>
+	<div class="clear"></div>
+</div>
+<footer>
+	<a href="http://www.google.com">elso</a>
+	<a href="http://www.google.com">masodik</a>
+	<a href="http://www.google.com">harmadik</a>
+	<a href="http://www.google.com">negyedik</a>
+</footer>
 </html>
